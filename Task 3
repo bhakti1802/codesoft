@@ -1,0 +1,10 @@
+import string
+import random
+
+characters = string.ascii_letters + string.digits + string.punctuation
+
+len = int(input("Enter the length of the password: "))
+
+password = ''.join(random.choices(characters, k=len))
+
+print("Your password is:", password)
